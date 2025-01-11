@@ -35,10 +35,36 @@ const Footer = () => {
                     </p>
                     <div className="quick-links" style={{ marginTop: "10px" }}>
                         <h3>Social Links</h3>
-                        <a href="#" style={{ color: "black", textDecoration: "none", marginRight: "10px" }}>Facebook</a>
-                        <a href="#" style={{ color: "black", textDecoration: "none", marginRight: "10px" }}>Instagram</a>
-                        <a href="#" style={{ color: "black", textDecoration: "none", marginRight: "10px" }}>Twitter</a>
-                        <a href="#" style={{ color: "black", textDecoration: "none", marginRight: "10px" }}>TikTok</a>
+                <div className="social-icons" style={{ display: "flex", justifyContent: "center", gap: "35px", marginBottom: "10px" }}>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="src/assets/images/facebook.png"
+                        alt="Facebook"
+                        style={{ width: "30px", height: "30px" }}
+                    />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="src/assets/images/insta.png"
+                        alt="Instagram"
+                        style={{ width: "30px", height: "30px" }}
+                    />
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="src/assets/images/twitter.png"
+                        alt="Twitter"
+                        style={{ width: "30px", height: "30px" }}
+                    />
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src="src/assets/images/tiktok.png"
+                        alt="TikTok"
+                        style={{ width: "30px", height: "30px" }}
+                    />
+                </a>
+            </div>
                     </div>
                 </div>
 
