@@ -1,0 +1,241 @@
+/* Video Background for Food Page */
+/* Video or Image Background for Food Page */
+.food-video-background {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Adjust height as needed */
+    overflow: hidden;
+    background-image: url('https://d1hjkbq40fs2x4.cloudfront.net/2019-08-02/files/1564727279.jpeg');
+    background-size: cover; /* Makes the image cover the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+
+.food-background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.food-title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.food-title-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+    color: #ffffff;
+}
+
+/* Food Cards Section */
+.food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.food-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.food-card h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.food-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+.food-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.food-link:hover {
+    color: #2980b9;
+}
+
+/* New Video Section */
+.food-video-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.food-video-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.food-videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.food-video {
+    width: 100%;
+    max-width: 400px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .food-card {
+        width: 90%;
+    }
+}
+
+/* FoodDetail Page Styles */
+.food-detail {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.food-detail h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.food-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.food-image:hover {
+    transform: scale(1.05);
+}
+
+.food-detail p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.food-detail strong {
+    font-weight: bold;
+    color: #34495e;
+}
+
+a {
+    font-size: 1.2rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .food-detail {
+        padding: 15px;
+    }
+
+    .food-detail h1 {
+        font-size: 2rem;
+    }
+
+    .food-image {
+        max-width: 100%;
+    }
+
+    .food-detail p {
+        font-size: 1rem;
+    }
+}
+
+/* Food.css */
+
+/* Style for the food video section */
+.food-video-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8; /* Light background color */
+  }
+  
+  /* Style for the heading */
+  .food-video-section h2 {
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Container for the video */
+  .food-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the video */
+  .food-video {
+    width: 100%;
+    max-width: 800px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

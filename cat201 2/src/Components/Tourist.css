@@ -1,0 +1,301 @@
+.tourist-video-background {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Skyline_of_George_Town%2C_Penang_at_night_Nov2024-29-17.jpg/1200px-Skyline_of_George_Town%2C_Penang_at_night_Nov2024-29-17.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.tourist-background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tourist-title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.tourist-title-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+    color: #ffffff;
+}
+
+
+.tourist-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .tourist-card-link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+  }
+  
+  .tourist-card {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 100%; 
+    max-width: 100%;
+  }
+  
+  .tourist-card:hover {
+    transform: scale(1.02); 
+  }
+  
+  .tourist-image {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+  }
+  
+  .tourist-info {
+    padding: 15px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tourist-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .tourist-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .tourist-link:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+
+
+.tourist-video-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.tourist-video-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.tourist-videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tourist-video {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+    .tourist-card {
+        width: 90%;
+    }
+}
+
+
+.tourist-detail {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tourist-detail h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tourist-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.tourist-image:hover {
+    transform: scale(1.05);
+}
+
+.tourist-detail p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tourist-detail strong {
+    font-weight: bold;
+    color: #34495e;
+}
+
+a {
+    font-size: 1.2rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    color: #2980b9;
+    
+}
+
+.tourist-info h2:hover{
+    color: #2980b9;
+}
+
+
+@media (max-width: 768px) {
+    .tourist-detail {
+        padding: 15px;
+    }
+
+    .tourist-detail h1 {
+        font-size: 2rem;
+    }
+
+    .tourist-image {
+        max-width: 100%;
+    }
+
+    .tourist-detail p {
+        font-size: 1rem;
+    }
+}
+
+
+.tourist-video-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8; 
+  }
+  
+ 
+  .tourist-video-section h2 {
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Container for the video */
+  .tourist-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the video */
+  .tourist-video {
+    width: 100%;
+    max-width: 800px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Ensure the body and html take full height */
+  .tourist-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between each card */
+    margin: 20px 0;
+  }
+  
+  .tourist-card-link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+  }
+  
+  .tourist-card {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 90%;
+    margin-left: 2%;
+    padding: 3%;
+  }
+  
+  .tourist-card:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+  }
+  
+  .tourist-image {
+    width: 150px; /* Set a fixed width for the image */
+    height: 150px; /* Set a fixed height for the image */
+    object-fit: cover;
+    border-right: 1px solid #ddd;
+    margin-left: 1%;
+  }
+  
+  .tourist-info {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tourist-info h2 {
+    margin: 0;
+    font-size: 4rem;
+    color: #f8f8f8;
+  }

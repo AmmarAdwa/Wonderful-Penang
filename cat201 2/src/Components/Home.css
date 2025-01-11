@@ -1,0 +1,80 @@
+/* Container for the background image */
+.container {
+    text-align: center;
+    position: relative;
+    height: 100vh; /* Ensures it takes the full height of the viewport */
+    background-image: url('src/assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    padding: 0rem 1rem;
+  
+  }
+  
+  /* Text inside the container */
+  .container h1 {
+    font-size: 3rem;
+    color: rgb(20, 18, 18);
+    font-weight: bold;
+  }
+  
+  .container h2 {
+    font-size: 3rem;
+    color: rgb(20, 18, 18);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .container li {
+    color: rgb(243, 238, 238);
+    text-align: center;
+  }
+  
+  .container p1 {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .container p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: justify;
+  }
+  
+  /* Section wrapper */
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+    
+  
+  /* Each section block */
+  .section {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: beige;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section images */
+  .section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
